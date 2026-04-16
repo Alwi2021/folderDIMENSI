@@ -46,16 +46,38 @@
             "status": "Aktif"
         },
         {
-            "id": "H",
+            "id": "I",
             "email": "nurindrmayumini@gmail.com",
             "peran": "Nur Backup",
             "status": "Aktif"
         },
         {
-            "id": "I",
+            "id": "H",
             "email": "emulatorgamenurai@gmail.com",
             "peran": "Pembimbing Kas",
             "status": "Aktif"
         }
     ]
+
+    {
+  "proyek": "Piramida Guard",
+  "sektor": "I",
+  "identitas": {
+    "id": "I",
+    "email": "nurindramayuaimini@gmail.com",
+    "peran": "Pembimbing Kas / beckup system ",
+    "status": "Aktif"
+  },
+  "riwayat_aktivitas": [
+    {
+      "tanggal": "2026-04-16",
+      "tugas": "Inisialisasi GitHub Actions & Sinkronisasi Sektor",
+      "hasil": "Sukses",
+      "keterangan": "Sektor I telah terhubung ke repositori utama"
+    }
+  ],
+  "catatan": "Proses sinau rampung ing Sektor I. Folder I siap mengawal sistem pembimbing kas.",
+  "last_sync": "2026-04-16T14:35:00"
+}
+
 }
