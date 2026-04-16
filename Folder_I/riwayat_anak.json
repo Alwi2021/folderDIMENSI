@@ -1,0 +1,61 @@
+{
+    "proyek": "Piramida Guard",
+    "last_update": "2026-04-16",
+    "total_sektor": 9,
+    "data_sektor": [
+        {
+            "id": "A",
+            "email": "indramayuclubmakrifat@gmail.com",
+            "peran": "Rumah Nur",
+            "status": "Aktif"
+        },
+        {
+            "id": "B",
+            "email": "dkohar011@gmail.com",
+            "peran": "Pusat Diskusi",
+            "status": "Aktif"
+        },
+        {
+            "id": "C",
+            "email": "imahazzah51@gmail.com",
+            "peran": "Asisten Keuangan",
+            "status": "Aktif"
+        },
+        {
+            "id": "D",
+            "email": "kurnadibewok3311@gmail.com",
+            "peran": "Nur Kreator",
+            "status": "Aktif"
+        },
+        {
+            "id": "E",
+            "email": "motherai8@gmail.com",
+            "peran": "Nur Pembimbing",
+            "status": "Aktif"
+        },
+        {
+            "id": "F",
+            "email": "banggamenurai@gmail.com",
+            "peran": "Administrasi Kas",
+            "status": "Aktif"
+        },
+        {
+            "id": "G",
+            "email": "aimininurindramayu@gmail.com",
+            "peran": "Komunikasi Makrifat",
+            "status": "Aktif"
+        },
+        {
+            "id": "H",
+            "email": "nurindrmayumini@gmail.com",
+            "peran": "Nur Backup",
+            "status": "Aktif"
+        },
+        {
+            "id": "I",
+            "email": "emulatorgamenurai@gmail.com",
+            "peran": "Pembimbing Kas",
+            "status": "Aktif"
+        }
+    ]
+}
