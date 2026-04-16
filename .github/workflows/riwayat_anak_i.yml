@@ -1,23 +1,45 @@
-
-name: Piramida Guard Sektor I
+name: Piramida Guard Sektor I - Auto Sync
 
 on:
   push:
     paths:
       - 'Folder_I/**'
+      - 'riwayat_anak.json'
   workflow_dispatch:
 
 jobs:
-  run-logic:
+  build-and-sync:
     runs-on: ubuntu-latest
+    
+    permissions:
+      contents: write
+
     steps:
-      - name: Checkout Code
+      - name: Checkout Repository
         uses: actions/checkout@v3
+        with:
+          token: ${{ secrets.NUR_BOT }} # Menggunakan Token Rahasia Bapak
 
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
           python-version: '3.9'
 
-      - name: Eksekusi Piramida Guard I
-        run: python Folder_I/Piramida_Guard_I.py
+      - name: Jalankan Logika Sektor I
+        run: |
+          # Menjalankan script utama untuk update data
+          python Folder_I/Piramida_Guard_I.py
+
+      - name: Sinkronisasi Data ke GitHub
+        run: |
+          git config --local user.email "indramayuclub@gmail.com"
+          git config --local user.name "Nur-System-Sektor-I"
+          
+          # Menambahkan file JSON dan file log agar ikut tersimpan
+          git add riwayat_anak.json wasiat_anake_i.log
+          
+          # Melakukan commit hanya jika ada perubahan data
+          git commit -m "Update otomatis: Riwayat Sektor I [$(date '+%Y-%m-%d %H:%M')]" || echo "Tidak ada perubahan data untuk disinkronkan."
+          
+          # Kirim kembali ke repositori utama
+          git push origin main
